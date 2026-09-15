@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MacMote Support</title>
+<link rel="icon" href="assets/macmote-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --paper: #f6f4ef;
+    --ink: #1b1c1e;
+    --ink-soft: #4a4d52;
+    --rule: #d8d4c9;
+    --accent: #3d6b8a;
+    --accent-soft: #e7eef1;
+    --card: #ffffff;
+    color-scheme: light dark;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #15171a;
+      --ink: #eceae4;
+      --ink-soft: #a3a7ac;
+      --rule: #33363b;
+      --accent: #7fb3d1;
+      --accent-soft: #1c2b33;
+      --card: #1c1e22;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --paper: #15171a;
+    --ink: #eceae4;
+    --ink-soft: #a3a7ac;
+    --rule: #33363b;
+    --accent: #7fb3d1;
+    --accent-soft: #1c2b33;
+    --card: #1c1e22;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.65;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+
+  .glyph {
+    width: 40px;
+    height: 40px;
+    border-radius: 11px;
+    overflow: hidden;
+    border: 1px solid var(--rule);
+    flex-shrink: 0;
+  }
+
+  .glyph img { width: 100%; height: 100%; display: block; }
+
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  h1 {
+    font-family: "IBM Plex Serif", Georgia, serif;
+    font-weight: 600;
+    font-size: 2.1rem;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    margin: 4px 0 6px;
+  }
+
+  .lede {
+    font-size: 1.05rem;
+    color: var(--ink-soft);
+    max-width: 60ch;
+    margin: 0 0 44px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  section { margin-bottom: 40px; }
+
+  h2 {
+    font-family: "IBM Plex Serif", Georgia, serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 0 0 14px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  h2 .num {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.75rem;
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  p { margin: 0 0 12px; max-width: 62ch; color: var(--ink); }
+  p:last-child { margin-bottom: 0; }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 20px 22px;
+  }
+
+  ul { margin: 0; padding-left: 20px; }
+  li { margin-bottom: 10px; max-width: 60ch; }
+  li:last-child { margin-bottom: 0; }
+
+  code {
+    font-family: "IBM Plex Mono", monospace;
+    background: var(--accent-soft);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 0.88em;
+  }
+
+  .contact {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.95rem;
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    font-size: 13px;
+    color: var(--ink-soft);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  a { color: var(--accent); }
+
+  @media (max-width: 480px) {
+    h1 { font-size: 1.7rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="glyph"><img src="assets/macmote-icon.png" alt="MacMote app icon"></div>
+    <div class="eyebrow">MacMote &mdash; macOS App</div>
+  </header>
+
+  <h1>Support</h1>
+  <p class="lede">
+    Help with setup, troubleshooting your Apple TV bridge connection, or
+    reporting a bug.
+  </p>
+
+  <section>
+    <h2><span class="num">01</span> Getting connected</h2>
+    <div class="card">
+      <ul>
+        <li>Open MacMote and click the <strong>&bull;&bull;&bull;</strong> button, or "Add Apple TV&hellip;" from the TV menu.</li>
+        <li>Enter the URL of your Apple TV bridge, for example <code>http://apple-tv.local:8080</code>.</li>
+        <li>If your bridge requires a token, add it in the optional field below the URL.</li>
+        <li>Commands only work while your Mac and the bridge are on the same local network.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span> Common issues</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Buttons don't do anything</strong> &mdash; check the bridge URL is correct and reachable from a browser on the same Mac.</li>
+        <li><strong>Widget looks blank</strong> &mdash; remove and re-add the MacMote widget from the widget gallery.</li>
+        <li><strong>Local network permission prompt</strong> &mdash; approve it in System Settings &rarr; Privacy &amp; Security &rarr; Local Network.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span> Contact</h2>
+    <p>For anything not covered above, reach out and include your macOS version and what you were trying to do.</p>
+    <p><a class="contact" href="mailto:kadin.hunter.ai@icloud.com">kadin.hunter.ai@icloud.com</a></p>
+  </section>
+
+  <footer>
+    <span>MacMote &middot; a Hunter Ops utility for macOS</span>
+    <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</div>
+
+</body>
+</html>

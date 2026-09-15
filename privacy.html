@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MacMote Privacy Policy</title>
+<link rel="icon" href="assets/macmote-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --paper: #f6f4ef;
+    --ink: #1b1c1e;
+    --ink-soft: #4a4d52;
+    --rule: #d8d4c9;
+    --accent: #3d6b8a;
+    --accent-soft: #e7eef1;
+    --card: #ffffff;
+    color-scheme: light dark;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #15171a;
+      --ink: #eceae4;
+      --ink-soft: #a3a7ac;
+      --rule: #33363b;
+      --accent: #7fb3d1;
+      --accent-soft: #1c2b33;
+      --card: #1c1e22;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --paper: #15171a;
+    --ink: #eceae4;
+    --ink-soft: #a3a7ac;
+    --rule: #33363b;
+    --accent: #7fb3d1;
+    --accent-soft: #1c2b33;
+    --card: #1c1e22;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.65;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+
+  .glyph {
+    width: 40px;
+    height: 40px;
+    border-radius: 11px;
+    overflow: hidden;
+    border: 1px solid var(--rule);
+    flex-shrink: 0;
+  }
+
+  .glyph img { width: 100%; height: 100%; display: block; }
+
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  h1 {
+    font-family: "IBM Plex Serif", Georgia, serif;
+    font-weight: 600;
+    font-size: 2.1rem;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    margin: 4px 0 6px;
+  }
+
+  .updated {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-bottom: 40px;
+  }
+
+  .lede {
+    font-size: 1.05rem;
+    color: var(--ink-soft);
+    max-width: 60ch;
+    margin-bottom: 44px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .lede strong { color: var(--ink); font-weight: 600; }
+
+  section { margin-bottom: 40px; }
+
+  h2 {
+    font-family: "IBM Plex Serif", Georgia, serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 0 0 14px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  h2 .num {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.75rem;
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  p { margin: 0 0 12px; max-width: 62ch; color: var(--ink); }
+  p:last-child { margin-bottom: 0; }
+
+  .fact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .fact {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+
+  .fact .label {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 5px;
+  }
+
+  .fact .value {
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+
+  .fact .value.no { color: var(--accent); }
+
+  ul { margin: 0; padding-left: 20px; }
+  li { margin-bottom: 8px; max-width: 60ch; }
+  li:last-child { margin-bottom: 0; }
+
+  code {
+    font-family: "IBM Plex Mono", monospace;
+    background: var(--accent-soft);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    font-size: 13px;
+    color: var(--ink-soft);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  a { color: var(--accent); }
+
+  @media (max-width: 480px) {
+    .fact-grid { grid-template-columns: 1fr; }
+    h1 { font-size: 1.7rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="glyph"><img src="assets/macmote-icon.png" alt="MacMote app icon"></div>
+    <div class="eyebrow">MacMote &mdash; macOS App</div>
+  </header>
+
+  <h1>Privacy Policy</h1>
+  <div class="updated">Effective August 27, 2026</div>
+
+  <p class="lede">
+    MacMote is a remote-control app for a paired Apple TV bridge on your local
+    network. <strong>It does not collect, store, transmit, or sell any personal
+    data</strong> &mdash; to us or to anyone else.
+  </p>
+
+  <section>
+    <h2><span class="num">01</span> What MacMote does</h2>
+    <p>
+      MacMote sends button-press commands &mdash; navigation, volume, playback
+      &mdash; from your Mac to a bridge address you configure yourself, over
+      your local network. That address and an optional access token are the
+      only settings the app stores, and they never leave your Mac.
+    </p>
+    <div class="fact-grid">
+      <div class="fact">
+        <div class="label">Data collected</div>
+        <div class="value no">None</div>
+      </div>
+      <div class="fact">
+        <div class="label">Data shared with third parties</div>
+        <div class="value no">None</div>
+      </div>
+      <div class="fact">
+        <div class="label">Tracking / analytics</div>
+        <div class="value no">None</div>
+      </div>
+      <div class="fact">
+        <div class="label">Account required</div>
+        <div class="value no">No</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span> What's stored, and where</h2>
+    <p>
+      The bridge URL and optional access token you enter are saved in a
+      shared <code>UserDefaults</code> app-group container local to your Mac,
+      so the MacMote widget can use the same settings as the main app. This
+      data:
+    </p>
+    <ul>
+      <li>Never leaves your device except in the outbound command you send to your own bridge address.</li>
+      <li>Is never transmitted to MacMote's developer or any analytics, advertising, or cloud service.</li>
+      <li>Is removed automatically if you delete the app.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span> Network access</h2>
+    <p>
+      MacMote requests local network access solely to reach the Apple TV
+      bridge address you provide. It does not browse, scan, or connect to any
+      other device or service.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span> Children's privacy</h2>
+    <p>
+      MacMote is a utility app not directed at children and collects no data
+      from any user, regardless of age.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span> Changes to this policy</h2>
+    <p>
+      If MacMote's data practices ever change, this page will be updated and
+      the "effective" date above will reflect the revision.
+    </p>
+  </section>
+
+  <footer>
+    <span>MacMote &middot; a Hunter Ops utility for macOS</span>
+    <a href="index.html">Support</a>
+  </footer>
+</div>
+
+</body>
+</html>
